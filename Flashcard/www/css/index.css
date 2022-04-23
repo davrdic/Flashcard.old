@@ -1,0 +1,44 @@
+
+h2 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+p {
+    text-transform: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+p1 {
+    text-transform: none;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: visible;
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    left: 20%;
+}
