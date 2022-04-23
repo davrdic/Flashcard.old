@@ -33,12 +33,7 @@ mainMenuButton.addEventListener('click', function () {
 });
 
 deckOneButton.addEventListener('click', function () {
-    flashcards = createDeckOne();
-    deckOneButton.style.display = 'none';
-    deckTwoButton.style.display = 'none';
-    nextWordButton.style.display = 'inline';
-    mainMenuButton.style.display = 'inline';
-    currentStateDisplay.innerText = 'Flashcards left: ' + (flashcards.length);
+    GetRandomWord();
 });
 
 deckTwoButton.addEventListener('click', function () {
@@ -88,4 +83,13 @@ function displayDefEx() {
 
 function removeFlash(flashcards) {
     flashcards.splice(randomIndex, 1);
+}
+
+function setDeckStartDisplay(deck) {
+    flashcards = deck;
+    deckOneButton.style.display = 'none';
+    deckTwoButton.style.display = 'none';
+    nextWordButton.style.display = 'inline';
+    mainMenuButton.style.display = 'inline';
+    currentStateDisplay.innerText = 'Flashcards left: ' + (flashcards.length);
 }

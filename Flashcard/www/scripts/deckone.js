@@ -5,12 +5,12 @@ function createNewWord(name, definition, example) {
     this.example = example;
 }
 
-function createDeckOne() {
+function createDeckOne(word) {
 
     let flashcards = [];
 
     var flashcard = new createNewWord
-        ('anomaly',
+        (word,
         'noun – something that is unusual or unexpected',
         'The student’s poor performance on the latest test was an anomaly since she had previously earned excellent grades.');
     flashcards.push(flashcard);
